@@ -1,6 +1,7 @@
 import java.util.Formatter;
 
 /**
+ * by jojohe in ZJU
  * A naked recursive list of integers, similar to what we saw in lecture 3, but
  * with a large number of additional methods.
  *
@@ -82,7 +83,15 @@ public class IntList {
 
     public static IntList dcatenate(IntList A, IntList B) {
         //TODO:  fill in method
-        return null;
+        if(A==null){
+            return B;
+        }
+        IntList ptrA=A;
+        while(ptrA.rest!=null){
+            ptrA=ptrA.rest;
+        }
+        ptrA.rest=B;
+        return A;
     }
 
     /**
@@ -91,7 +100,20 @@ public class IntList {
      */
     public static IntList catenate(IntList A, IntList B) {
         //TODO:  fill in method
-        return null;
+        if(A==null){
+            return B;
+        }
+        IntList ptrA = A;
+        IntList res = new IntList(0,null);
+        IntList ptrres = res;
+        while(ptrA!=null){
+            ptrres.rest=new IntList(ptrA.first,null);
+            ptrres=ptrres.rest;
+            ptrA=ptrA.rest;
+        }
+        ptrres.rest=B;
+        return  res.rest;
+
     }
 
 
