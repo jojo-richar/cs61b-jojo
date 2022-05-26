@@ -1,4 +1,5 @@
 public class Planet {
+//    instance variables
     public double xxPos;
     public double yyPos;
     public double xxVel;
