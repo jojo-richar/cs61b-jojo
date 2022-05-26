@@ -1183,17 +1183,17 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
     }
 
 
-    /**
-     * Draws a polygon with the vertices 
-     * (<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>),
-     * (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), ...,
-     * (<em>x</em><sub><em>n</em>–1</sub>, <em>y</em><sub><em>n</em>–1</sub>).
-     *
-     * @param  x an array of all the <em>x</em>-coordinates of the polygon
-     * @param  y an array of all the <em>y</em>-coordinates of the polygon
-     * @throws IllegalArgumentException unless {@code x[]} and {@code y[]}
-     *         are of the same length
-     */
+//    /**
+//     * Draws a polygon with the vertices
+//     * (<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>),
+//     * (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), ...,
+//     * (<em>x</em><sub><em>n</em>–1</sub>, <em>y</em><sub><em>n</em>–1</sub>).
+//     *
+//     * @param  x an array of all the <em>x</em>-coordinates of the polygon
+//     * @param  y an array of all the <em>y</em>-coordinates of the polygon
+//     * @throws IllegalArgumentException unless {@code x[]} and {@code y[]}
+//     *         are of the same length
+//     */
     public static void polygon(double[] x, double[] y) {
         if (x == null) throw new IllegalArgumentException("x-coordinate array is null");
         if (y == null) throw new IllegalArgumentException("y-coordinate array is null");
